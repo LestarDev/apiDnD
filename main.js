@@ -165,6 +165,7 @@ const generateThirdStep = () => {
             })
             finalAnswer+=`</ul></div>`;
             mainForm.classList.add('pionowyFormClass');
+            mainForm.style="flex-direction: column;height: 100vh;flex-wrap: wrap;align-items: flex-end;align-content: space-between;";
             mainForm.innerHTML=finalAnswer;
         });
          
@@ -192,6 +193,8 @@ const generateFourStep = () => {
 
     mainForm.classList.remove('pionowyFormClass');
     mainForm.classList.add('pionowyFormRandom');
+    
+    mainForm.style="flex-direction: column; gap: 1rem;";
     
     mainForm.innerHTML=finalAnswer;
 
