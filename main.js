@@ -221,7 +221,7 @@ const generateLastStep = () => {
         cechyData.push(getCookie(cechy[i]));
     }
     
-    const allCechy - cechyData.reduce(
+    const allCechy = cechyData.reduce(
   (accumulator, currentValue) => accumulator + currentValue,
   initialValue
 );
