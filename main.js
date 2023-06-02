@@ -218,7 +218,7 @@ const generateLastStep = () => {
     const cechyData = [];
     
     for(let i=0; i<6; i++){
-        cechyData.push(getCookie(cechy[i]));
+        cechyData.push(parseInt(getCookie(cechy[i])));
     }
     
     const initialValue = 0;
