@@ -215,11 +215,22 @@ const generateLastStep = () => {
 
     finalAnswer+=`<div class="kartaPostaci"><div class="dataKP"><span>Name: <b>${getCookie("name")}</b></span> <span>Race: ${getCookie("race")}</span> <span>Class: ${getCookie("class")}</span></div><div class="conKP">`
 
+    const cechyData = [];
+    
     for(let i=0; i<6; i++){
-        finalAnswer+=`<div><span>${getCookie(cechy[i])}</span><span>${cechy[i]}</span></div>`
+        cechyData.push(getCookie(cechy[i]));
+    }
+    
+    const allCechy - cechyData.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+    
+    for(let i=0; i<6; i++){
+        finalAnswer+=`<div><span>${cechyData[i]}</span><span>${cechy[i]}</span></div>`   
     }
 
-    finalAnswer+=`</div></div>`
+    finalAnswer+=`</div><span>Lacznie cech: ${allCechy}</span></div>`
 
     mainForm.innerHTML=finalAnswer;
 
