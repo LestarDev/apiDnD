@@ -123,7 +123,7 @@ const generateSecondStep = async () => {
 
     // console.log(resultData);
 
-    resultDataRaces.forEach(e=>{
+    resultDataRaces.pop().forEach(e=>{
         finalAnswer+=`<option value="${e.url}">${e.name}</option>`;
     });
 
