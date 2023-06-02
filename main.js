@@ -4,7 +4,9 @@ const infoDiv = document.querySelector("#info");
 
 const secondFormPath = document.querySelector(`[name="path"]`);
 
-const cechy = ["Siła", "Zręczność", "Kondycja", "Inteligencja", "Mądrość", "Charyzma"]
+const cechyT = ["Siła", "Zręczność", "Kondycja", "Inteligencja", "Mądrość", "Charyzma", "Omnipotencja Kultywości"];
+
+const cechy = cechyT.filter(word => word.length < 20);
 
 let currentStep=0;
 
