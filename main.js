@@ -122,8 +122,8 @@ const generateSecondStep = async () => {
     let finalAnswer=`<select name="races" id="races">`;
 
     // console.log(resultData);
-
-    resultDataRaces.pop().forEach(e=>{
+    resultDataRaces.pop();
+    resultDataRaces.forEach(e=>{
         finalAnswer+=`<option value="${e.url}">${e.name}</option>`;
     });
 
