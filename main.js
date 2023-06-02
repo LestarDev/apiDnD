@@ -151,7 +151,8 @@ const generateThirdStep = () => {
     let finalAnswer = "";
     secondForm.style.display="none";
     infoDiv.style.display="none";
-    resultDataClasses.filter(resultDataClasses => resultDataClasses.length > 1).forEach(el=>{
+    const result = resultDataClasses.filter(resultDataClasses => resultDataClasses.length > 1);
+    result.forEach(el=>{
        
         getDataFromApiURL(el.url).then(e=>{
             finalAnswer+=`<div class='simpleClass'><div><span>${el.name}</span><input type="hidden" name="classData" value="${el.name}">${submitForm()}</div><ul>`
