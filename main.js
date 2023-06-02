@@ -231,7 +231,7 @@ const generateLastStep = () => {
         finalAnswer+=`<div><span>${cechyData[i]}</span><span>${cechy[i]}</span></div>`   
     }
 
-    finalAnswer+=`</div><span>Lacznie cech: ${allCechy}</span></div>`
+    finalAnswer+=`</div><span style="color: var(--color-text);">Lacznie cech: ${allCechy}</span></div>`
 
     mainForm.innerHTML=finalAnswer;
 
