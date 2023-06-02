@@ -117,13 +117,11 @@ const generateFirstStep = () => {
 
 const generateSecondStep = async () => {
 
-    console.log(resultDataRaces);
-
     let finalAnswer=`<select name="races" id="races">`;
 
     // console.log(resultData);
     
-    const lastOption = resultDataReces.at(resultDataReces.length-1);
+    const lastOption = resultDataRaces.at(resultDataRaces.length-1);
     
     console.log(lastOption);
     
