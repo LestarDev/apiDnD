@@ -161,6 +161,7 @@ const generateThirdStep = () => {
                 
             })
             finalAnswer+=`</ul></div>`;
+            mainForm.classList.add('pionowyFormClass');
             mainForm.innerHTML=finalAnswer;
         });
          
@@ -186,6 +187,9 @@ const generateFourStep = () => {
 
     finalAnswer+=submitForm();
 
+    mainForm.classList.remove('pionowyFormClass');
+    mainForm.classList.add('pionowyFormRandom');
+    
     mainForm.innerHTML=finalAnswer;
 
     const reRenderFourStep = document.querySelector(".reRenderFourStep");
